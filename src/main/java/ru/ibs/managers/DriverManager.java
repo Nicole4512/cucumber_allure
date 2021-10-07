@@ -91,7 +91,7 @@ public class DriverManager {
                 break;
             case "chrome":
                 ChromeOptions chromeOptions = new ChromeOptions();
-                chromeOptions.addArguments("user-data-dir=C:\\Users\\Николь\\AppData\\Local\\Google\\Chrome\\User Data");
+                chromeOptions.addArguments("user-data-dir=C:\\Users\\Николь\\AppData\\Local\\Google\\Chrome\\User Data\\Default");
                 System.setProperty("webdriver.chrome.driver", props.getProperty(chrome));
                 driver = new ChromeDriver(chromeOptions);
                 break;
