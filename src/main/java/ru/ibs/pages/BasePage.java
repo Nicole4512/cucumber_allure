@@ -12,7 +12,6 @@ import ru.ibs.managers.PageManager;
 import ru.ibs.managers.TestPropManager;
 
 /**
- * @author Arkadiy_Alaverdyan
  * Базовый класс всех страничек
  */
 public class BasePage {

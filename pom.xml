@@ -70,6 +70,13 @@
             <version>${cucumber-junit.version}</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.7.0</version>
+            <scope>compile</scope>
+        </dependency>
+
         <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-cucumber5-jvm -->
         <dependency>
             <groupId>io.qameta.allure</groupId>
@@ -77,12 +84,6 @@
             <version>${allure-cucumber5-jvm.version}</version>
         </dependency>
 
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-            <version>5.7.0</version>
-            <scope>compile</scope>
-        </dependency>
 
     </dependencies>
 
@@ -127,6 +128,7 @@
                     </dependency>
                 </dependencies>
             </plugin>
+
 
 
             <!-- Плагин, который отвечает за формирование сайта Allure отчета -->

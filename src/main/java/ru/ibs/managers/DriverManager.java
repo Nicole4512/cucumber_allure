@@ -90,11 +90,11 @@ public class DriverManager {
                 driver = new FirefoxDriver();
                 break;
             case "chrome":
-                ChromeOptions chromeOptions = new ChromeOptions();
-                chromeOptions.addArguments("user-data-dir=C:\\Users\\Николь\\AppData\\Local\\Google\\Chrome\\User Data\\Default");
-                System.setProperty("webdriver.chrome.driver", props.getProperty(chrome));
-                driver = new ChromeDriver(chromeOptions);
-                break;
+                    ChromeOptions chromeOptions = new ChromeOptions();
+                    chromeOptions.addArguments("user-data-dir=C:\\Users\\Николь\\AppData\\Local\\Google\\Chrome\\User Data");
+                    System.setProperty("webdriver.chrome.driver", props.getProperty(chrome));
+                    driver = new ChromeDriver(chromeOptions);
+                    break;
             default:
                 Assertions.fail("Тип браузера " + props.getProperty(TYPE_BROWSER) + " не существует в фреймворке");
 
